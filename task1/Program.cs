@@ -11,5 +11,6 @@ int number2 = Convert.ToInt32(Console.ReadLine());
 int sqweer =number2*number2;
 if (number1==sqweer) Console.WriteLine("Первое число является квадратом второго.");
 else Console.WriteLine("Первое число не является квадратом второго.");
+Console.WriteLine(4 % 2);
 
 
