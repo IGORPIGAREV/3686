@@ -3,14 +3,18 @@
 // a = 2, b = 10 -> нет
 // a = 9, b = -3 -> да
 // a = -3 b = 9 -> нет
-Console.WriteLine("Введите первое число:");
-//string answer = Console.ReadLine();
-int number1 = Convert.ToInt32(Console.ReadLine());
-Console.WriteLine("Введите второе число:");
-int number2 = Convert.ToInt32(Console.ReadLine());
-int sqweer =number2*number2;
-if (number1==sqweer) Console.WriteLine("Первое число является квадратом второго.");
-else Console.WriteLine("Первое число не является квадратом второго.");
-Console.WriteLine(4 % 2);
+Console.Write("Введите число: ");
+int N = Convert.ToInt32(Console.ReadLine());
+int NClone = 0;
+for(int arg = N; arg > 0; arg = arg / 10)
+{
+    NClone = (NClone * 10) + (arg % 10);
+}
+//Console.WriteLine($"{N},{NClone}");//Выыод исходного числа и перевернутого
+if(N == NClone)
+{
+    Console.WriteLine("Число полиндром");
+}
+else Console.WriteLine("Число не полиндром");
 
 
